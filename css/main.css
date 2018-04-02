@@ -1,0 +1,22 @@
+.carousel-items > div {
+  display: none;
+}
+
+.carousel-btn {
+  border: 4px solid #fff;
+  border-radius: 50%;
+}
+
+#arsinoitherium-control:checked ~ .carousel-inner #arsinoitherium,
+#elasmotherium-control:checked ~ .carousel-inner #elasmotherium,
+#glyptodon-control:checked ~ .carousel-inner #glyptodon,
+#megatherium-control:checked ~ .carousel-inner #megatherium {
+  display: block;
+}
+
+#arsinoitherium-control:checked ~ .carousel-inner [for="arsinoitherium-control"],
+#elasmotherium-control:checked ~ .carousel-inner [for="elasmotherium-control"],
+#glyptodon-control:checked ~ .carousel-inner [for="glyptodon-control"],
+#megatherium-control:checked ~ .carousel-inner [for="megatherium-control"] {
+  background-color: #fff;
+}
